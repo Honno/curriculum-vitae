@@ -92,16 +92,16 @@
 	\textbf{\marginemph FIND ME ONLINE}
 	\begin{description}[labelsep=1pt]
 		\item \icon{github} \href{https://github.com/Honno/}{github.com/Honno}
-		\item \icon{pypi} \href{https://pypi.org/user/Honno/}{pypi.org/user/Honno}
 		\item \icon{kaggle} \href{https://www.kaggle.com/justhonno}{kaggle.com/justhonno}
+		\item \icon{pypi} \href{https://pypi.org/user/Honno/}{pypi.org/user/Honno}
 		\item \icon{site} \href{https://matthewbarber.io/}{matthewbarber.io}
 		\item \icon{jekyll} \href{https://blog.matthewbarber.io/}{blog.matthewbarber.io}
 	\end{description}
 }
 
-I'm a BSc Computer Science graduate experienced in archive compression and signal processing.
-I am particularly proficient in Python, and am comfortable using many other languages including C++.
-I can engineer my own applications to accomplish bespoke tasks, from simple scripts to fully-fledged CLIs, and I'm capable of identify bottlenecks to optimise performance.
+I'm a BSc Computer Science graduate experienced in developing web applications, able to exercise the MVVM pattern for a Vue.js and Node.js stack.
+I can design sensible database schemas and can write optimised queries for a variety of SQL/NoSQL stores.
+I know how to specify visualisation grammars and can meet more bespoke presentation needs where appropriate.
 I work efficiently alone, being a disciplined and resourceful individual always eager to improve my craft.
 I enjoy working with and learning from my peers, able to communicate my own ideas succinctly.
 
@@ -109,69 +109,66 @@ I enjoy working with and learning from my peers, able to communicate my own idea
 
 \annotate{
 	\listskills{LANGUAGES}{
-		\item Python
-		\item C
-		\item C++
-		\item Lisp
-		\item SQL
 		\item JavaScript
+		\item SQL
+		\item Python
 		\item Bash
 		\item Java
+		\item C
+	}
+
+	\medskip
+		
+	\listskills{WEB STACK}{
+		\item Node.js
+		\item Flask
+		\item Sqlite
+		\item MongoDB
+		\item Vue.js
+		\item Pug
+		\item Jinja
+		\item Vega-Lite
+		\item Chart.js
+		\item Jekyll
+		\item jQuery
+		\item SASS
 	}
 
 	\medskip
 	
 	\listskills{TOOLS}{
 		\item Git
-		\item Jupyter
+		\item SSH
 		\item Docker
+		\item Jupyter
 		\item pre-commit
 		\item GitHub Actions
 		\item TravisCI
 		\item AppVeyor
 	}
-	
-	\medskip
-	
-	\listskills{PYTHON PACKAGES}{
-		\item CFFI
-		\item pandas
-		\item NumPy
-		\item SciPy
-		\item scikit-learn
-		\item Matplotlib
-		\item Altair
-		\item pytest
-		\item tox
-		\item Hypothesis
-		\item PySpark
-		\item Redis
-		\item Jinja
-		\item Click
-		\item Flask
-		\item pewee
-		\item PyMongo
-		\item requests
-		\item Beautiful Soup
-		\item pywb
-	}
+
 }
+
+
+\subsection*{\href{https://www.yygarchive.org/}{YoYo Games Sandbox Archive}}
+
+Flask site to search for games of a shutdown games portal, querying a Sqlite store which holds game downloads and metadata. The store was procured from an existing WARC collection which was replayed and subsequently scraped.
+
+\subsection*{\href{https://github.com/Honno/events-site}{Aston Events Site Coursework}}
+
+Node.js site for students to manage events. Uses Express for routing, Pug for templating, and MongoDB with Mongoose for data storage.
+
+\subsection*{\href{https://github.com/Joshgallagher/financial-analysis-stack}{Financial Analysis Stack Coursework}}
+
+Python application that creates linear regression models of stock market histories. Demonstrates how to build applications with distributed data via Hive on HDFS, and how to utilise parallel processing with Spark. Chart.js visualisations are available when the models are created.  All services are initialised as Docker containers.
 
 \subsection*{\href{https://github.com/Honno/coinflip/}{coinflip}}
 
-\tech{Python} library for assuring cryptographic randomness in binary sequences. The randomness tests include techniques used in signal processing like DFT for Fourier transforms, GF(2)-optimised ranking for matrices, and Berlekamp-Massey for finding linear-feedback shift registers. All analysis and manipulation of sequences is achieved with \tech{pandas}. A testing suite featuring \tech{pytest} and \tech{Hypothesis} ensures reliable results.
+Python library for assuring cryptographic randomness in RNGs. Where appropriate, results include Vega-Lite visualisations of test data such as Fourier transforms and random walks.
 
 \subsection*{\href{https://matthewbarber.io/gzip-quine/}{Recursive GZIP Bomb Tutorial}}
 
-Comprehensive primer on the file format and compression algorithm theory involved in creating compressed file quines (i.e. extracts to an exact copy of itself, ad infinitum). Self-referential checksum was brute-forced by a multiprocessing \tech{Python} script. The resulting file is used to smoke test Apache's Tika project and has exposed a macOS bug.
-
-\subsection*{\href{https://github.com/Honno/epitope-classification}{Linear B-cell Epitope Classification}}
-
-Essay on exploring, preprocessing and modelling for a dirty proteins dataset. Subtle duplication patterns were identified, resolved via a bespoke \tech{Python} script. \tech{Weka} was used to create kNN, decision trees, Bayesian and logistic regression classifiers to find an appropriate model for both equal and uneven cost scenarios.
-
-\subsection*{\href{https://github.com/Honno/sts-pylib}{Statistical Test Suite for Python}}
-
-\tech{C} extension module that binds the randomness testing software to a \tech{Python} library. Involved reworking the original state-based CLI program into a functional interface. coinflip is tested against this module to explore inconsistencies and expose bugs.
+Comprehensive primer on the file format and compression algorithm theory involved in creating compressed file quines (i.e. extracts to an exact copy of itself, ad infinitum). Self-referential checksum was brute-forced by a multiprocessing Python script ran on a Google Cloud Platform VM.
 
 \section*{EXPERIENCE}
 
